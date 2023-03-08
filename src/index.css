@@ -1,0 +1,24 @@
+body{
+    background-color: lightslategray;
+    font-family:'TiltNeon-Regular', Tahoma;
+}
+
+@font-face {
+    font-family: 'TiltNeon-Regular';
+    src: local('TiltNeon-Regular'),
+    url("./Fonts/Tilt_Neon/TiltNeon-Regular.ttf") format("truetype");
+}
+  
+.app-content{
+    max-width: 95vw;
+    margin: 0 auto;
+}
+
+.card{
+    background-color:whitesmoke ;
+    border-radius: 10px;
+    padding: 10px 20px 30px;
+    margin: 50px;
+    align-items: center;
+    /* justify-content: center; */
+}
