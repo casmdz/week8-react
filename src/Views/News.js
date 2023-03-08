@@ -5,12 +5,13 @@ export default class News extends Component {
         super();
         this.state = {
             articles: []
-
+            // if it was a functional component:
+            //  const [articles, setArticles] = useState([]);
         }
     }
 // 1 
     getNews = async () => {
-        const res = await fetch('https://newsapi.org/v2/everything?q=bitcoin&apiKey=4ba2cb57066b49e2b7a8f20f5e0f65c6');
+        const res = await fetch('https://newsapi.org/v2/everything?q=education&apiKey=4ba2cb57066b49e2b7a8f20f5e0f65c6');
         const data = await res.json();
         const articles = data.articles;
         this.setState({articles: articles})
@@ -19,7 +20,7 @@ export default class News extends Component {
     componentDidMount(){
         //this becomes very helpful when dealing with ASYNC actions
         console.log(this.state.articles)
-        setTimeout(this.getNews, 4000)
+        setTimeout(this.getNews, 2000)
     }
 
     //for loop
@@ -30,6 +31,7 @@ export default class News extends Component {
 
   render() {
     return (
+        <section className='card'>
       <div>
         <h1>News</h1>
         {/* SHOW ARTICLES HERE */}
@@ -38,6 +40,7 @@ export default class News extends Component {
         
 
         </div>
+        </section>
     )
   }
 };

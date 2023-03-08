@@ -44,3 +44,27 @@ dynamic
 https://mui.com/material-ui/ 
 
 https://m3.material.io/ 
+
+https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md 
+
+
+
+
+Add routing using react-router-dom 
+https://reactrouter.com/en/main DOCS 
+<BrowserRouter>
+
+
+Views folder = pages you can View from the Nav bar
+Components folder = piece of the larger application, like the nav bar, maybe comment sections, buttons, etc
+
+
+custom react hooks 
+1- usePrevious : if you want to store the previous value of a state 
+
+export default function PreviousComponent() {
+    const [count]
+}
+
+
+https://www.cloudhadoop.com/reactjs-google-font/ 

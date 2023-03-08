@@ -1,0 +1,1 @@
+anything like global css, images, svgs
